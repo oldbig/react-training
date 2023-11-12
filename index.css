@@ -1,0 +1,123 @@
+body {
+    background-image: linear-gradient(45deg, rgb(111,000,207), rgb(23,168,240));
+    background-size: 100% 50vh;
+    background-repeat: no-repeat;
+    background-color: rgb(240,241,244);
+}
+.w {
+    width: 950px;
+    margin: 20px auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.bar {
+    height: 150px;
+    line-height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bar .bar__title {
+    font-weight: bold;
+    font-size:30px;
+    color: white;
+}
+.bar .bar__moon {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius:8px;
+    background-color: rgb(199,203,211);
+    cursor: pointer;
+}
+
+.add_ops {
+    height: 80px;
+    line-height: 80px;
+    /* padding: 0 20px; */
+    background-color: rgb(255,255,255);
+    border-radius: 10px;
+    color: rgb(100,104,123);
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.add_ops input[type=input] {
+    width: 80%;
+    height: 60%;
+}
+.add_ops button {
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+}
+.add_opps__icon {
+    border: 1px solid black;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    line-height: 1em;
+    text-align: center;
+}
+.tasks {
+    background-color: rgb(255,255,255);
+    border-radius: 10px;
+    height: 30em;
+    overflow: scroll;
+}
+.tasks__header, .tasks__list__item {
+    display: flex;
+    justify-content:space-between;
+    border-bottom: 1px solid black;
+    font-size: 16px;
+}
+.tasks__header {
+    height: 50px;
+    color:#657C9B; 
+    line-height: 50px;
+    font-size: 25px;
+}
+.tasks__header button {
+    height: 70%;
+    color:#657C9B;  
+    font-size: 20px;
+}
+.tasks__list__item {
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+}
+.tasks__list__item__left {
+    display: flex;
+}
+.tasks__list__item__left input:checked + div {
+    text-decoration: line-through;
+}
+.tasks__list__item__content {
+    margin-left:5px;
+}
+.tasks__list__item__right a {
+    margin-left: 5px
+}
+.tasks__list__item__right a:first-child:hover + div, .tasks__list__item__right__edit:hover {
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+}
+.tasks__list__item__right__edit {
+    position: absolute;
+    padding: auto 5px;
+    text-align: center;
+    width: 0px;
+    height: 0px;
+    right: 0px;
+    background-color: #c8c2c2;
+    z-index: 100;
+    top: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 3px #847f7f;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Todo App</title>
+    <link rel="stylesheet" href="https://unpkg.com/reset-css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./index.css"></link>
+</head>
+<body>
+    <div class="bar w">
+        <div class="bar__title">MY TASKS</div>
+        <div class="bar__moon">
+            <i class="fa-solid fa-moon"></i>
+        </div>
+    </div>
+    <div class="add_ops w">
+        <div class="add_opps__icon">
+            <i class="fa-solid fa-plus"></i>
+        </div>
+        <input type="input" placeholder="Add a new task..."/>
+        <button type="button">Add</button>
+    </div>
+    <div class="tasks w">
+        <div class="tasks__header">
+            <div class="tasks__header__count">2 tasks left</div>
+            <div class="tasks__header__clear">
+                <button>Clear all tasks</button> </div>
+        </div>
+        <div class="tasks__list">
+            <ul>
+                <li class="tasks__list__item">
+                    <div class="tasks__list__item__left">
+                        <input type="checkbox" />
+                        <div class="tasks__list__item__content">Complete college assignment</div>
+                    </div>
+                    <div class="tasks__list__item__right">
+                        <a href="#"><i class="fa-solid fa-pen"></i></a>
+                        <div class="tasks__list__item__right__edit">
+                            <input value="Complete college assignment"/>
+                            <button >Submit</button>
+                            <button >Cancel</button>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-trash"></i></a>
+                    </div>
+                </li>
+                <li class="tasks__list__item">
+                    <div class="tasks__list__item__left">
+                        <input type="checkbox" />
+                        <div class="tasks__list__item__content">Wake up at 4:00am</div>
+                    </div>
+                    <div class="tasks__list__item__right">
+                        <a href="#"><i class="fa-solid fa-pen"></i></a>
+                        <div class="tasks__list__item__right__edit">
+                            <input value="Wake up at 4:00am"/>
+                            <button >Submit</button>
+                            <button >Cancel</button>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-trash"></i></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
