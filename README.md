@@ -1,5 +1,6 @@
 # react-training
-reactjs training materials
+Reactjs training materials,
+The pure html template: [static page](https://oldbig.github.io/react-training/) 
 
 ## Topics
 React ES6     ★★★★★
