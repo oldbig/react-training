@@ -84,3 +84,8 @@ Custom Hooks  ★★★
 - add detail page and user info page
 ### task4
 - add unit tests
+### task5
+- add redux toolkit
+- show (active tasks / total tasks) on the header bar
+- load tasks with loader
+- update and create tasks with action
