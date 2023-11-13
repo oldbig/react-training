@@ -70,6 +70,7 @@ Custom Hooks  ★★★
 - delete one todo item
 - edit one todo item
 - show current active tasks count
+- split mutiple components
 - optional: validate input text, at least 10 characters, not all blank characters. show validate fail message.
 ### task2:
 - async fetch data
