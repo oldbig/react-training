@@ -65,7 +65,7 @@ body {
     background-color: rgb(255,255,255);
     border-radius: 10px;
     height: 30em;
-    overflow: scroll;
+    overflow: auto;
 }
 .tasks__header, .tasks__list__item {
     display: flex;
