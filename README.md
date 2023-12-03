@@ -2,6 +2,10 @@
 Reactjs training materials,
 The pure html template: [static page](https://oldbig.github.io/react-training/) 
 
+## Use these materials as a practice start
+- copy content according to the comments in index.html
+- clear content index.css of react project, replace App.css content of react project with this index.css
+
 ## Topics
 React ES6     ★★★★★
 
@@ -21,7 +25,7 @@ React Router  ★★★★
 
   loader ★★★
 
-  action ★★★
+  action ★
   
 React Memo  ★★
 
@@ -29,11 +33,11 @@ React CSS Styling    ★★★★
 
 React Sass Styling    ★★★   
 
-Redux Tookit         ★★★★★
+Redux Tookit         ★★★
 
-  Redux Tookit Query ★★★★
+  Redux Tookit Query ★★
   
-React test           ★★★★★
+React testing Libray           ★★★★★
 
 ### Hooks:
 
@@ -70,10 +74,10 @@ Custom Hooks  ★★★
 - delete one todo item
 - edit one todo item
 - show current active tasks count
-- split mutiple components
+- split multiple components
 - optional: validate input text, at least 10 characters, not all blank characters. show validate fail message.
 ### task2:
-- async fetch data
+- async fetch data, show loading status
   + npm install --save-dev json-server concurrently
   + update start script: `concurrently \"react-scripts start\" \"json-server db.json -p 3030 -w \"`
 - add item to server
@@ -87,7 +91,7 @@ Custom Hooks  ★★★
 ### task4
 - add unit tests
 ### task5
-- add redux toolkit
+- add redux toolkit (optional)
 - show (active tasks / total tasks) on the header bar
-- load tasks with loader
-- update and create tasks with action
+- load tasks with react-router loader
+- update and create tasks with Formik
