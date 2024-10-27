@@ -1,0 +1,56 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/debian
+{
+	"name": "Debian",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	// "image": "maven:3.9.9-amazoncorretto-17-debian",
+	// "image": "node:20-bookworm",
+	// "image": "alpine:edge",
+	"build": {
+		// Path is relative to the devcontainer.json file.
+		"dockerfile": "Dockerfile",
+		"args": {
+			"USERNAME": "${localEnv:USERNAME}"
+		}
+	},
+	"features": {
+		// "ghcr.io/devcontainers-extra/features/ts-node:1": {
+		// 	"version": "latest"
+		// },
+		// "ghcr.io/devcontainers-extra/features/typescript:2": {
+		// 	"version": "latest"
+		// },
+		// "ghcr.io/devcontainers/features/node:1": {},
+		// "ghcr.io/devcontainers/features/java:1": {
+		// 	"jdkDistro": "amzn",
+		// 	"version": "17",
+		// 	"installMaven": true,
+		// 	"mavenVersion": "3.8.6",
+		// },
+		// "ghcr.io/davzucky/devcontainers-features-wolfi/user:1": {
+		// 	"username": "${localEnv:USERNAME}",
+		// 	"userUid": "1001",
+		// 	"userGid": "1001"
+		// },
+	},
+
+	"overrideFeatureInstallOrder":[
+		// "ghcr.io/davzucky/devcontainers-features-wolfi/user"
+	],
+
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Configure tool-specific properties.
+	// "customizations": {},
+	
+	"postCreateCommand": "$(pwd)/.devcontainer/init.sh ${localEnv:USERNAME}",
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	"remoteUser": "${localEnv:USERNAME}",
+	"containerUser": "${localEnv:USERNAME}",
+	"updateRemoteUserUID": true,
+}
